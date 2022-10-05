@@ -3,8 +3,8 @@ require('dotenv').config();
 const express = require('express');
 const Datastore = require('nedb');
 
-const port = process.env.PORT;
-const host = process.env.HOST;
+const port = process.env.PORT || 3000;
+const host = process.env.HOST || "localhost";
 const filedb = process.env.DB_NAME;
 
 const app = express();
